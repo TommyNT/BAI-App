@@ -1,0 +1,11 @@
+div .pad {
+	padding: 100px 100px;
+    display: inline;
+    border-radius: 5px;
+    border-style: solid;
+    border-bottom: solid;
+}
+
+div .allPads {
+	padding-top: 200px;
+}
