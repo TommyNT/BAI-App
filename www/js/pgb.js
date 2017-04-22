@@ -15,3 +15,21 @@ function deviceInfo() {
 
 	// document.getElementById("interests").innerHTML = interests;	
 }
+
+function sample1(){
+	var audio = new Audio('/samples/Slice - 002.wav');
+	audio.play();
+	console.log('sample1');
+}
+
+function sample2(){
+	var audio = new Audio('/samples/Slice - 006.wav');
+	audio.play();
+	console.log('sample2');
+}
+
+function sample3(){
+	var audio = new Audio('/samples/Slice - 007.wav');
+	audio.play();
+	console.log('sample3');
+}
