@@ -17,19 +17,19 @@ function deviceInfo() {
 }
 
 function sample1(){
-	var audio = new Audio('android_asset/www/samples/Slice - 002.wav');
+	var audio = new Audio('file:///android_asset/www/samples/Slice - 002.wav');
 	audio.play();
 	console.log('sample1');
 }
 
 function sample2(){
-	var audio = new Audio('android_asset/www/samples/Slice - 006.wav');
+	var audio = new Audio('file:///android_asset/www/samples/Slice - 006.wav');
 	audio.play();
 	console.log('sample2');
 }
 
 function sample3(){
-	var audio = new Audio('android_asset/www/samples/Slice - 007.wav');
+	var audio = new Audio('file:///android_asset/www/samples/Slice - 007.wav');
 	audio.play();
 	console.log('sample3');
 }
