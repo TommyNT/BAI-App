@@ -17,7 +17,7 @@ function deviceInfo() {
 }
 
 function sample1(){
-	var audio = new Audio('/samples/Slice - 002.wav');
+	var audio = new Audio('android_asset/www/samples/Slice - 002.wav');
 	audio.play();
 	console.log('sample1');
 }
