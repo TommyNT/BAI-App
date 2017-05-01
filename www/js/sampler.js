@@ -1,3 +1,8 @@
+$(document).ready(function() { 
+    $(document).bind("deviceready", function() {
+    }); 
+});
+
 $(document).ready(function () {
 	var audio = new Media('file:///android_asset/www/samples/Slice - 002.wav');
 	// var audio = new Audio('./samples/Slice - 002.wav');
