@@ -6,7 +6,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -19,7 +19,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -32,7 +32,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -45,7 +45,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -58,7 +58,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -71,7 +71,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -84,7 +84,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -97,7 +97,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
@@ -110,7 +110,7 @@ $(document).ready(function () {
 		if (playing == false) {
 			audio.play();
 			playing = false;
-			audio.currentTime = 0;
+			audio.seekTo(0);
 		}
 	});
 });
