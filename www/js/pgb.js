@@ -31,5 +31,11 @@ function sample2(){
 function sample3(){
 	var audio = new Media('file:///android_asset/www/samples/Slice - 007.wav');
 	audio.play();
-	console.log('sample3');
 }
+
+$(document).ready(
+  $('#sample4').onclick(function(){
+  	var audio = new Media('file:///android_asset/www/samples/Slice - 005.wav');
+	audio.play();
+  });
+);
