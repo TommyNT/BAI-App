@@ -180,7 +180,7 @@ function sample7(){
 	// });
 // });
 
-unction sample8(){
+function sample8(){
 	var audio = new Media('file:///android_asset/www/samples/Slice - 010.wav');
 	var playing = false;
 	if (playing == false) {
