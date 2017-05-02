@@ -71,18 +71,28 @@ $(document).ready(function () {
 	});
 });
 
-$(document).ready(function () {
+// $(document).ready(function () {
+// 	var audio = new Media('file:///android_asset/www/samples/Slice - 007.wav');
+// 	// var audio = new Audio('./samples/Slice - 007.wav');
+// 	var playing = false;
+// 	$( "#sample6" ).click( function (){
+// 		if (playing == false) {
+// 			audio.play();
+// 			playing = false;
+// 			audio.seekTo(0);
+// 		}
+// 	});
+// });
+
+function sample6(){
 	var audio = new Media('file:///android_asset/www/samples/Slice - 007.wav');
-	// var audio = new Audio('./samples/Slice - 007.wav');
 	var playing = false;
-	$( "#sample6" ).click( function (){
-		if (playing == false) {
+	if (playing == false) {
 			audio.play();
 			playing = false;
 			audio.seekTo(0);
 		}
-	});
-});
+}
 
 $(document).ready(function () {
 	var audio = new Media('file:///android_asset/www/samples/Slice - 008.wav');
