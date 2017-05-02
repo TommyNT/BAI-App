@@ -15,7 +15,6 @@
 		<plugin name="cordova-plugin-device" spec="~1.1.4" />
 		<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
 		<plugin name="cordova-plugin-media" spec="~3.0.0" />
-		<plugin name="com.rjfun.cordova.plugin.lowlatencyaudio" spec="1.1.3" source="pgb" />
 	</plugins>
 
 </widget>
