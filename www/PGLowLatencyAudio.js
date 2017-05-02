@@ -1,5 +1,3 @@
-var exec = require('cordova/exec');
-
 var PGLowLatencyAudio = {
   
 preloadFX: function ( id, assetPath, success, fail) {
@@ -28,5 +26,3 @@ unload: function (id, success, fail) {
     
     
 };
-
-module.exports = LowLatencyAudio;
