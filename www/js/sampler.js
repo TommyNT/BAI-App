@@ -1,9 +1,20 @@
-function init() {
-	document.addEventListener("deviceready",onDeviceReady, false);
+
+function onBodyLoad() {		
+    document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("touchmove", function (e) { e.preventDefault(); return false; }, false);
+    document.addEventListener("touchstart", function (e) { e.preventDefault(); return false; }, false);	
 }
 
 function onDeviceReady() {
-	navigator.notification.beep(1);
+	PGLowLatencyAudio.preloadFX('sample1', 'file:///android_asset/www/samples/Slice - 002.mp3');
+	PGLowLatencyAudio.preloadFX('sample2', 'file:///android_asset/www/samples/Slice - 003.mp3');
+	PGLowLatencyAudio.preloadFX('sample3', 'file:///android_asset/www/samples/Slice - 004.mp3');
+	PGLowLatencyAudio.preloadFX('sample4', 'file:///android_asset/www/samples/Slice - 005.mp3');
+	PGLowLatencyAudio.preloadFX('sample5', 'file:///android_asset/www/samples/Slice - 006.mp3');
+	PGLowLatencyAudio.preloadFX('sample6', 'file:///android_asset/www/samples/Slice - 007.mp3');
+	PGLowLatencyAudio.preloadFX('sample7', 'file:///android_asset/www/samples/Slice - 008.mp3');
+	PGLowLatencyAudio.preloadFX('sample8', 'file:///android_asset/www/samples/Slice - 010.mp3');
+	PGLowLatencyAudio.preloadFX('sample9', 'file:///android_asset/www/samples/Slice - 014.mp3');
 }
 
 // $(document).ready(function () {
@@ -19,14 +30,20 @@ function onDeviceReady() {
 	// });
 // });
 
+// function sample1(){
+// 	var audio = new Media('file:///android_asset/www/samples/Slice - 002.mp3');
+// 	var playing = false;
+// 	if (playing == false) {
+// 		audio.play();
+// 		playing = false;
+// 		audio.seekTo(0);
+// 	}
+// }
+
+
 function sample1(){
-	var audio = new Media('file:///android_asset/www/samples/Slice - 002.mp3');
-	var playing = false;
-	if (playing == false) {
-		audio.play();
-		playing = false;
-		audio.seekTo(0);
-	}
+	document.getElementById("sample1").className = "touched";
+    PGLowLatencyAudio.play('sample1');
 }
 
 // $(document).ready(function () {
