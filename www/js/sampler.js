@@ -20,7 +20,7 @@ function onDeviceReady() {
 // });
 
 function sample1(){
-	var audio = new Media('file:///android_asset/www/samples/Slice - 002.mp3');
+	var audio = new Media('file:///android_asset/www/samples/Slice - 002.m3u');
 	var playing = false;
 	if (playing == false) {
 		audio.play();
