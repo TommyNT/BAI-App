@@ -8,6 +8,10 @@
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script src="js/sampler.js"></script>
+		 <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
 		<script src="cordova.js"></script>
 	</head>
 	<body onload="init()" class="ui-mobile-viewport">
@@ -22,7 +26,7 @@
 
 			<div class="ui-grid-b">
 				<div class="pad ui-block-a">
-					<div class="ui-bar ui-bar-e allPads one" id="sample1" onclick="sample1()"></div>
+					<div class="ui-bar ui-bar-e allPads one drum" id="sample1" ontouchstart="app.play('Slice - 002');" ontouchend="app.touchEnd(event);"></div>
 				</div>
 				<div class="pad ui-block-b">
 					<div class="ui-bar ui-bar-e allPads two" id="sample2" onclick="sample2()"></div>

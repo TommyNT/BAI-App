@@ -30,6 +30,10 @@ div .pad {
 	background-color:#ffc14d;
 }
 
+.touched {
+	background-color: #34495e;
+}
+
 @media only screen and (max-width: 320px){
 	div .allPads {
 		height: 70px;
