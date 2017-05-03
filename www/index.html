@@ -19,24 +19,50 @@
 
 		  <div data-role="main" class="ui-content">
 
-			
+			{# <div class="ui-grid-b">
+				<div class="pad ui-block-a">
+					<div class="ui-bar ui-bar-e allPads one drum" id="sample1" ontouchstart="app.play('Slice - 002');" ontouchend="app.touchEnd(event);"></div>
+				</div>
+				<div class="pad ui-block-b">
+					<div class="ui-bar ui-bar-e allPads two" id="sample2" onclick="sample2()"></div>
+				</div>
+				<div class="pad ui-block-c"v>
+					<div class="ui-bar ui-bar-e allPads three" id="sample3" onclick="sample3()"></div>
+				</div>
+				<div class="pad ui-block-a">
+					<div class="ui-bar ui-bar-e allPads four" id="sample4" onclick="sample4()"></div>
+				</div>
+				<div class="pad ui-block-b">
+					<div class="ui-bar ui-bar-e allPads five" id="sample5" onclick="sample5()"></div>
+				</div>
+				<div class="pad ui-block-c"v>
+					<div class="ui-bar ui-bar-e allPads six" id="sample6" onclick="sample6()"></div>
+				</div>
+				<div class="pad ui-block-a">
+					<div class="ui-bar ui-bar-e allPads seven" id="sample7" onclick="sample7()"></div>
+				</div>
+				<div class="pad ui-block-b">
+					<div class="ui-bar ui-bar-e allPads eight" id="sample8" onclick="sample8()"></div>
+				</div>
+				<div class="pad ui-block-c"v>
+					<div class="ui-bar ui-bar-e allPads nine" id="sample9" onclick="sample9()"></div>
+				</div>
+			</div> #}
 
 			<div class="drum" id="bass" ontouchstart="app.play('bass');" ontouchend="app.touchEnd(event);"><span>Bass</span></div>
 			<div class="drum" id="highhat" ontouchstart="app.play('highhat');" ontouchend="app.touchEnd(event);"><span>Hihat</span></div>
 			<div class="drum" id="snare" ontouchstart="app.play('snare');" ontouchend="app.touchEnd(event);"><span>Snare</span></div>
 			<div class="drum" id="bongo" ontouchstart="app.play('bongo');" ontouchend="app.touchEnd(event);"><span>Bongo</span></div>
-			
-			<script src="cordova.js"></script>
-			<script type="text/javascript" src="js/index.js"></script>
-	        <script type="text/javascript">
-	            app.initialize();
-	        </script>
-	        
+		
 			<div data-role="footer" data-position="fixed">
 				<h1>(c) Paweł Kalinowski & Duong Nguyen Tuan</h1>
 			</div> 
 		</div> 
 
-		
+		<script src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
 	</body>
 </html>
