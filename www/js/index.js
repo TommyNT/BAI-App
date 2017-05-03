@@ -76,7 +76,7 @@ var app = {
         //                                 function(msg){ console.error( 'Error: ' + msg ); });
         var items = ['bass', 'snare', 'highhat', 'bongo'];
         for(var i=0; i<items.length; i++) {
-            var audio = new Media('assets/' + items[i] + '.mp3');
+            var audio = new Media('file:///android_asset/www/assets/' + items[i] + '.mp3');
             var playing = false;
             if (playing == false) {
                 audio.play();
