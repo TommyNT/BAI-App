@@ -19,7 +19,7 @@
 
 		  <div data-role="main" class="ui-content">
 
-			<div class="ui-grid-b">
+			{# <div class="ui-grid-b">
 				<div class="pad ui-block-a">
 					<div class="ui-bar ui-bar-e allPads one drum" id="sample1" ontouchstart="app.play('Slice - 002');" ontouchend="app.touchEnd(event);"></div>
 				</div>
@@ -47,7 +47,12 @@
 				<div class="pad ui-block-c"v>
 					<div class="ui-bar ui-bar-e allPads nine" id="sample9" onclick="sample9()"></div>
 				</div>
-			</div>
+			</div> #}
+
+			<div class="drum" id="bass" ontouchstart="app.play('bass');" ontouchend="app.touchEnd(event);"><span>Bass</span></div>
+			<div class="drum" id="highhat" ontouchstart="app.play('highhat');" ontouchend="app.touchEnd(event);"><span>Hihat</span></div>
+			<div class="drum" id="snare" ontouchstart="app.play('snare');" ontouchend="app.touchEnd(event);"><span>Snare</span></div>
+			<div class="drum" id="bongo" ontouchstart="app.play('bongo');" ontouchend="app.touchEnd(event);"><span>Bongo</span></div>
 		
 			<div data-role="footer" data-position="fixed">
 				<h1>(c) Paweł Kalinowski & Duong Nguyen Tuan</h1>
