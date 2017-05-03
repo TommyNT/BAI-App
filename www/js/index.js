@@ -34,7 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        $cordovaPlugin.someFunction().then(success, error);
         console.log('deviceready');
     },
     // Update DOM on a Received Event
@@ -42,7 +41,7 @@ var app = {
 
         if( window.plugins && window.plugins.NativeAudio ) {
 
-            var items = ['bass', 'snare', 'highhat', 'bongo'];
+            var items = ['Slice - 002', 'snare', 'highhat', 'bongo'];
             for(var i=0; i<items.length; i++) {
                 var asset = 'assets/' + items[i] + '.mp3';
                 window.plugins.NativeAudio.preloadSimple(items[i], 
@@ -71,20 +70,9 @@ var app = {
 
     play: function(drum) {
         document.getElementById(drum).classList.add('touched');
-        // window.plugins.NativeAudio.play(drum, 
-        //                                 function(msg){console.info(msg), document.getElementById(drum).classList.remove('touched');},
-        //                                 function(msg){ console.error( 'Error: ' + msg ); });
-        var items = ['bass', 'snare', 'highhat', 'bongo'];
-        for(var i=0; i<items.length; i++) {
-            var audio = new Media('assets/' + items[i] + '.mp3');
-            var playing = false;
-            if (playing == false) {
-                audio.play();
-                playing = false;
-                audio.seekTo(0);
-                document.getElementById(drum).classList.remove('touched');
-            }
-        }
+        window.plugins.NativeAudio.play(drum, 
+                                        function(msg){console.info(msg), document.getElementById(drum).classList.remove('touched');},
+                                        function(msg){ console.error( 'Error: ' + msg ); });
     }
 
 
