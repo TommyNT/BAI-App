@@ -2,6 +2,10 @@ div .pad {
     border: ridge;
 }
 
+.allPads:hover{
+	opacity: 0.4;
+}
+
 .allPads.one{
 	background-color:#ff4d4d;
 }
