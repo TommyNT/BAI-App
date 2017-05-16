@@ -1,43 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-  <title>Pocket Sampler</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
 
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4e8ef7">
- 
-  <!-- cordova.js required for cordova apps -->
-  <script src="sampler.js"></script>
-  <script src="cordova.js"></script>
+    http://www.apache.org/licenses/LICENSE-2.0
 
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.error('Error', err));
-    }
-  </script>-->
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Pocket Sampler</title>
+    </head>
+    <body class="ui-mobile-viewport">
 
-  <link href="build/main.css" rel="stylesheet">
-  <link href="sampler.css" rel="stylesheet">
+        <div data-role="page" id="pageone">
+          <div data-role="header">
+            <h1>Pocket Sampler</h1>
+          </div>
 
-</head>
-<body>
+          <div data-role="main" class="ui-content">
 
-  <!-- Ionic's root component and where the app will load -->
-  <ion-app></ion-app>
-
-  <!-- The polyfills js is generated during the build process -->
-  <script src="build/polyfills.js"></script>
-
-  <!-- The bundle js is generated during the build process -->
-  <script src="build/main.js"></script>
-
-</body>
+            <div class="ui-grid-b">
+                <div class="pad ui-block-a">
+                    <div class="ui-bar ui-bar-e allPads one drum" id="bass" ontouchstart="app.play('bass');" ontouchend="app.touchEnd(event);"></div>
+                </div>
+                <div class="pad ui-block-b">
+                    <div class="ui-bar ui-bar-e allPads two drum" id="highhat" ontouchstart="app.play('highhat');" ontouchend="app.touchEnd(event);"></div>
+                </div>
+                <div class="pad ui-block-c"v>
+                    <div class="ui-bar ui-bar-e allPads three drum" id="snare" ontouchstart="app.play('snare');" ontouchend="app.touchEnd(event);"></div>
+                </div>
+                <div class="pad ui-block-a">
+                    <div class="ui-bar ui-bar-e allPads four drum" id="bongo" ontouchstart="app.play('bongo');" ontouchend="app.touchEnd(event);"></div>
+                </div>
+                <div class="pad ui-block-b">
+                    <div class="ui-bar ui-bar-e allPads five" id="sample5" onclick="sample5()"></div>
+                </div>
+                <div class="pad ui-block-c"v>
+                    <div class="ui-bar ui-bar-e allPads six" id="sample6" onclick="sample6()"></div>
+                </div>
+                <div class="pad ui-block-a">
+                    <div class="ui-bar ui-bar-e allPads seven" id="sample7" onclick="sample7()"></div>
+                </div>
+                <div class="pad ui-block-b">
+                    <div class="ui-bar ui-bar-e allPads eight" id="sample8" onclick="sample8()"></div>
+                </div>
+                <div class="pad ui-block-c"v>
+                    <div class="ui-bar ui-bar-e allPads nine" id="sample9" onclick="sample9()"></div>
+                </div>
+            </div>
+        </div> 
+    
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
 </html>
