@@ -56,7 +56,7 @@ var app = {
     play: function(drum) {
         document.getElementById(drum).classList.add('touched');
         window.plugins.NativeAudio.play(drum, 
-                                        function(msg){console.info(msg), document.getElementById(drum).classList.remove('touched');},
+                                        function(msg){console.info(msg), setTimeout(function(){document.getElementById(drum).classList.remove('touched');}, 100);},
                                         function(msg){ console.error( 'Error: ' + msg ); });
     }
 

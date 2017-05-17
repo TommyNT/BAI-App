@@ -41,8 +41,9 @@ html, body {
     border: ridge;
 }
 
-.allPads:hover{
-    opacity: 0.4;
+#pocket{
+    text-align: center;
+    font-family: Lato;
 }
 .touched {
 	opacity: 0.4;

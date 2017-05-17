@@ -41,7 +41,7 @@ var app = {
 
         if( window.plugins && window.plugins.NativeAudio ) {
 
-            var items = ['007', '002', '003', '004', '005',' 006', '008', '010', '014'];
+            var items = ['007', '002', '003', '004', '005', '006', '008', '010', '014'];
             for(var i=0; i<items.length; i++) {
                 var asset = 'assets/' + items[i] + '.mp3';
                 window.plugins.NativeAudio.preloadSimple(items[i], 
@@ -56,7 +56,7 @@ var app = {
     play: function(drum) {
         document.getElementById(drum).classList.add('touched');
         window.plugins.NativeAudio.play(drum, 
-                                        function(msg){console.info(msg), document.getElementById(drum).classList.remove('touched');},
+                                        function(msg){console.info(msg), setTimeout(function(){document.getElementById(drum).classList.remove('touched');}, 150);},
                                         function(msg){ console.error( 'Error: ' + msg ); });
     }
 
