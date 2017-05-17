@@ -41,7 +41,7 @@ var app = {
 
         if( window.plugins && window.plugins.NativeAudio ) {
 
-            var items = ['007', 'snare', 'highhat', 'bongo'];
+            var items = ['007', '002', '003', '004', '005',' 006', '008', '010', '014'];
             for(var i=0; i<items.length; i++) {
                 var asset = 'assets/' + items[i] + '.mp3';
                 window.plugins.NativeAudio.preloadSimple(items[i], 
