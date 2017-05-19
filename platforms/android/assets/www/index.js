@@ -58,7 +58,17 @@ var app = {
         window.plugins.NativeAudio.play(drum, 
                                         function(msg){console.info(msg), setTimeout(function(){document.getElementById(drum).classList.remove('touched');}, 100);},
                                         function(msg){ console.error( 'Error: ' + msg ); });
-    }
+    },
+
+    startRec: function() {
+        var src = "myrec.amr";
+        var mediaRec = new Media(src, onSuccess, onError);
+        mediaRec.startRecord();
+    },
+
+    stopRec: function() {
+        mediaRec.stopRecord();
+    },
 
 
 };
