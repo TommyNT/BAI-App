@@ -35,10 +35,13 @@ html, body {
     width:100%;
 }
 
+.box{
+    border: 2px solid !important;
+}
 /* allPads Styles */
 
 .allPads {
-    border: ridge;
+    border: 2px solid;
 }
 
 #pocket{
@@ -66,30 +69,13 @@ html, body {
     }
 }
 
-.one{
-    background-color:#ff4d4d;
+.short{
+    background-color: #00c6f2;
 }
-.two{
-    background-color:#ffc14d;
+
+.long{
+    background-color: #da70ee;
 }
-.three{
-    background-color:#ffff00;
-}
-.four{
-    background-color:#4dff4d;
-}
-.five{
-    background-color:#4d4dff;
-}
-.six{
-    background-color:#b54dff;
-}
-.seven{
-    background-color:#d24dff;
-}
-.eight{
-    background-color:#ff4d4d;
-}
-.nine{
-    background-color:#ffc14d;
+.jingle{
+    background-color: #d1ef05;
 }
