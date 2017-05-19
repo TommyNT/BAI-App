@@ -61,7 +61,7 @@ var app = {
     },
 
     startRec: function() {
-        var src = "myrec.amr";
+        var src = "myrec.mp3";
         var mediaRec = new Media(src, onSuccess, onError);
         mediaRec.startRecord();
     },
