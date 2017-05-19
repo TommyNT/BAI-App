@@ -41,7 +41,7 @@ var app = {
 
         if( window.plugins && window.plugins.NativeAudio ) {
 
-            var items = ['007', '002', '003', '004', '005', '006', '008', '010', '014', 'Snare 808X 1'];
+            var items = ['007', '002', '003', '004', 'HiTom AR60sEarly V127 1', '006', 'Snare AR60sEarly V127 4', '010', '014', 'Snare 808X 1', '005', '008', 'bass', 'bongo', 'Floor Tom AR60sEarly V127 2', 'highhat', 'MidTom AR60sEarly V127 1', 'snare'];
             for(var i=0; i<items.length; i++) {
                 var asset = 'assets/' + items[i] + '.mp3';
                 window.plugins.NativeAudio.preloadSimple(items[i], 
