@@ -37,6 +37,7 @@ html, body {
 
 .box{
     border: 2px solid !important;
+    margin-top: 20px;
 }
 /* allPads Styles */
 
@@ -46,6 +47,7 @@ html, body {
 
 #pocket{
     text-align: center;
+    font-size: 17px;
 }
 .touched {
     opacity: 0.4;
