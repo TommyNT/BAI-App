@@ -14,43 +14,7 @@
     <title>{{ site.title | default: site.github.repository_name }} by Paweł Kalinowski &amp; Duong Nguyen Tuan</title>
   </head>
 
-  <body>
-    <header>
-      <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <p>&lt;!DOCTYPE html&gt;</p>
-
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/BAI-App/assets/css/style.css?v=59ee95803b99f834b69b27015b3155064fa51368" media="screen" type="text/css">
-    <link rel="stylesheet" href="/BAI-App/assets/css/print.css" media="print" type="text/css">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Pocket Sampler by TommyNT</title>
-  
-
-  
+  <body> 
     <header>
       <div class="inner">
         <a href="https://tommynt.github.io/BAI-App/">
@@ -63,6 +27,11 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+          <h3 id="dane-autorów">Dane autorów:</h3>
+          <ul>
+            <li>Paweł Kalinowski, pawlo1337@gmail.com</li>
+            <li>Duong Nguyen Tuan, tommynt@outlook.com</li>
+          </ul>
           <table>
             <thead>
               <tr>
