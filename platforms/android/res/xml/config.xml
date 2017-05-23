@@ -22,6 +22,9 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="res/icon.png" />
     <allow-intent href="market:*" />
+    <splash density="port-hdpi" src="res/splashscreen.png" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="SplashScreenDelay" value="10000" />
 </widget>
