@@ -57,8 +57,6 @@
             </tbody>
           </table>
         </section>
-      </div>
-    </div>
         <aside id="sidebar">
           <a href="https://github.com/TommyNT/BAI-App/zipball/master" class="button">
               <small>Download</small>
