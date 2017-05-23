@@ -35,17 +35,22 @@ html, body {
     width:100%;
 }
 
+.box{
+    border: 2px solid !important;
+    margin-top: 20px;
+}
 /* allPads Styles */
 
 .allPads {
-    border: ridge;
+    border: 2px solid;
 }
 
-.allPads:hover{
-    opacity: 0.4;
+#pocket{
+    text-align: center;
+    font-size: 17px;
 }
 .touched {
-	opacity: 0.4;
+    opacity: 0.4;
 }
 
 @media only screen and (max-width: 320px){
@@ -66,30 +71,13 @@ html, body {
     }
 }
 
-.allPads.one{
-    background-color:#ff4d4d;
+.short{
+    background-color: #00c6f2;
 }
-.allPads.two{
-    background-color:#ffc14d;
+
+.long{
+    background-color: #da70ee;
 }
-.allPads.three{
-    background-color:#ffff00;
-}
-.allPads.four{
-    background-color:#4dff4d;
-}
-.allPads.five{
-    background-color:#4d4dff;
-}
-.allPads.six{
-    background-color:#b54dff;
-}
-.allPads.seven{
-    background-color:#d24dff;
-}
-.allPads.eight{
-    background-color:#ff4d4d;
-}
-.allPads.nine{
-    background-color:#ffc14d;
+.jingle{
+    background-color: #d1ef05;
 }
