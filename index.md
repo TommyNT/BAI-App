@@ -15,47 +15,14 @@
   </head>
 
   <body> 
-    <header>
-      <div class="inner">
-        <a href="https://tommynt.github.io/BAI-App/">
-          <h1>Pocket Sampler</h1>
-        </a>
-        <h2>Projekt zaliczeniowy z przedmiotu Bogate Aplikacje Internetowe. Aplikacja dzięki której możemy zagrać tzw. live act z wcześniej już wgranych i przypisanych do danego guzika sampli muzycznych.</h2>
-      </div>
-    </header>
-
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3 id="dane-autorów">Dane autorów:</h3>
+          <h1 id="dane-autorów">Dane autorów:</h1>
           <ul>
-            <li>Paweł Kalinowski, pawlo1337@gmail.com</li>
-            <li>Duong Nguyen Tuan, tommynt@outlook.com</li>
+            <li><strong>Paweł Kalinowski, pawlo1337@gmail.com</strong></li>
+            <li><strong>Duong Nguyen Tuan, tommynt@outlook.com</strong></li>
           </ul>
-          <table>
-            <thead>
-              <tr>
-                <th style="text-align: center">Android 4.4</th>
-                <th style="text-align: center">Android 5.1</th>
-                <th style="text-align: center">Android 6.0</th>
-                <th style="text-align: center">iOS 9.3</th>
-                <th style="text-align: center">iOS 10.0</th>
-                <th style="text-align: center">Windows 10 Store</th>
-                <th style="text-align: center">Travis CI</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="text-align: center"><a href="http://cordova-ci.cloudapp.net:8080/job/cordova-periodic-build/PLATFORM=android-4.4,PLUGIN=cordova-plugin-media/"><img src="http://cordova-ci.cloudapp.net:8080/buildStatus/icon?job=cordova-periodic-build/PLATFORM=android-4.4,PLUGIN=cordova-plugin-media" alt="Build Status"></a></td>
-                <td style="text-align: center"><a href="http://cordova-ci.cloudapp.net:8080/job/cordova-periodic-build/PLATFORM=android-5.1,PLUGIN=cordova-plugin-media/"><img src="http://cordova-ci.cloudapp.net:8080/buildStatus/icon?job=cordova-periodic-build/PLATFORM=android-5.1,PLUGIN=cordova-plugin-media" alt="Build Status"></a></td>
-                <td style="text-align: center"><a href="http://cordova-ci.cloudapp.net:8080/job/cordova-periodic-build/PLATFORM=android-6.0,PLUGIN=cordova-plugin-media/"><img src="http://cordova-ci.cloudapp.net:8080/buildStatus/icon?job=cordova-periodic-build/PLATFORM=android-6.0,PLUGIN=cordova-plugin-media" alt="Build Status"></a></td>
-                <td style="text-align: center"><a href="http://cordova-ci.cloudapp.net:8080/job/cordova-periodic-build/PLATFORM=ios-9.3,PLUGIN=cordova-plugin-media/"><img src="http://cordova-ci.cloudapp.net:8080/buildStatus/icon?job=cordova-periodic-build/PLATFORM=ios-9.3,PLUGIN=cordova-plugin-media" alt="Build Status"></a></td>
-                <td style="text-align: center"><a href="http://cordova-ci.cloudapp.net:8080/job/cordova-periodic-build/PLATFORM=ios-10.0,PLUGIN=cordova-plugin-media/"><img src="http://cordova-ci.cloudapp.net:8080/buildStatus/icon?job=cordova-periodic-build/PLATFORM=ios-10.0,PLUGIN=cordova-plugin-media" alt="Build Status"></a></td>
-                <td style="text-align: center"><a href="http://cordova-ci.cloudapp.net:8080/job/cordova-periodic-build/PLATFORM=windows-10-store,PLUGIN=cordova-plugin-media/"><img src="http://cordova-ci.cloudapp.net:8080/buildStatus/icon?job=cordova-periodic-build/PLATFORM=windows-10-store,PLUGIN=cordova-plugin-media" alt="Build Status"></a></td>
-                <td style="text-align: center"><a href="https://travis-ci.org/apache/cordova-plugin-media"><img src="https://travis-ci.org/apache/cordova-plugin-media.svg?branch=master" alt="Build Status"></a></td>
-              </tr>
-            </tbody>
-          </table>
         </section>
         <aside id="sidebar">
           <a href="https://github.com/TommyNT/BAI-App/zipball/master" class="button">
