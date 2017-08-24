@@ -16,6 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+var clicked = [];
 var app = {
     // Application Constructor
     initialize: function() {
@@ -61,14 +63,50 @@ var app = {
     },
 
     startRec: function() {
-        var src = "myrec.mp3";
-        var mediaRec = new Media(src, onSuccess, onError);
-        mediaRec.startRecord();
+        clicked = [];
+        $(function(){
+            $(".rec").css("color", "red");
+            $('.pad').click(function(event) {
+                clicked.push(event.target.id);
+                localStorage.setItem("clicked", JSON.stringify((clicked)));
+             });
+        });
     },
 
     stopRec: function() {
-        mediaRec.stopRecord();
+        $(function(){
+            $(".rec").css("color", "");
+            clicked = [];
+        });
     },
 
+    repeatRec: function() {
+        var local = (JSON.parse(localStorage.getItem("clicked")));
+        jQuery.each(local, function() {
+            console.log('' + this);
+            window.plugins.NativeAudio.play('' + this, 
+                function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
+                function(msg){ console.error( 'Error: ' + msg ); });
+        });
+    },
+
+    // sendRec: function() {
+    //     var local = (JSON.parse(localStorage.getItem("clicked")));
+    //     console.log('sendRec');
+    //     console.log(local);
+    //     $.ajax({
+    //         type: "POST", // Method of sending data to server
+    //         url: "php/send.php", // php script being sent to
+    //         cache: false,  // requested pages won't be cached by server
+    //         data: local, // data to be sent to server
+    //         dataType: "json", // data type to be received back from server
+            
+    //     }).done(function(response){
+    //         console.log(response.data);
+    //     }).fail(function(response){
+    //         console.log(response.data);
+    //     });
+
+    // },
 
 };
