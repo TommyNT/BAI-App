@@ -37,7 +37,7 @@ html, body {
 
 .box{
     border: 2px solid !important;
-    margin-top: 20px;
+    margin-top: 120px;
 }
 /* allPads Styles */
 
@@ -68,6 +68,24 @@ html, body {
 @media (min-width:426px) and (max-width: 768px) {
     div .allPads {
         height: 150px;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    div .allPads {
+        height: 250px;
+    }
+}
+
+@media (min-width:1025px) and (max-width: 1440px) {
+    div .allPads {
+        height: 400px;
+    }
+}
+
+@media (min-width:1441px) and (max-width: 2560px) {
+    div .allPads {
+        height: 600px;
     }
 }
 
