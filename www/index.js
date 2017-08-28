@@ -84,8 +84,8 @@ var app = {
         var local = (JSON.parse(localStorage.getItem("clicked")));
         jQuery.each(local, function() {
             // console.log('' + this);
-            window.plugins.NativeAudio.play('' + this, 
-                setTimeout(function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
+            setTimeout(window.plugins.NativeAudio.play('' + this, 
+                function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
                 function(msg){ console.error( 'Error: ' + msg ); }), 3000);
         });
     },
