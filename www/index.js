@@ -36,7 +36,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        console.log('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -91,22 +90,21 @@ var app = {
     },
 
     sendRec: function() {
-        var data = (JSON.stringify(localStorage.getItem("clicked")));
-        console.log('sendRec');
-        console.log(data);
+        var data2 = localStorage.getItem("clicked");
         $.ajax({
-            type: "POST", // Method of sending data to server
-            url: "php/send.php", // php script being sent to
-            cache: false,  // requested pages won't be cached by server
-            data: data, // data to be sent to server
-            dataType: "json", // data type to be received back from server
-            
-        }).done(function(response){
-            console.log(response);
-            alert("Wysłano!")
-        }).fail(function(response){
-            console.log(response);
-            alert("Nie wysłano!")
+            url: "https://api.mlab.com/api/1/databases/bai-app/collections/rec?apiKey=qgESeyEPpCDv7n4IRPa89K_0_KttfiMb",
+            data: JSON.stringify({
+                "rec" : data2
+            }),
+            type: "POST",
+            contentType: "application/json",
+            success: function(data){
+                alert("Pomyślnie zaktualizowano bazę danych!");
+            },
+            error: function(xhr, status, err){
+                alert("Baza danych nie została zaktualizowana!");
+                alert(err);
+            }  
         });
 
     },
