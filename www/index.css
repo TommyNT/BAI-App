@@ -47,7 +47,7 @@ html, body {
 
 #pocket{
     text-align: center;
-    font-size: 17px;
+    font-size: 40px;
 }
 .touched {
     opacity: 0.4;
@@ -98,4 +98,8 @@ html, body {
 }
 .jingle{
     background-color: #d1ef05;
+}
+
+.ui-btn{
+    height: 85px;
 }

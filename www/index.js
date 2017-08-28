@@ -82,13 +82,11 @@ var app = {
 
     repeatRec: function() {
         var local = (JSON.parse(localStorage.getItem("clicked")));
-        var time = 5000;
         jQuery.each(local, function() {
             // console.log('' + this);
-            setTimeout(window.plugins.NativeAudio.play('' + this, 
+            window.plugins.NativeAudio.play('' + this, 
                 function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
-                function(msg){ console.error( 'Error: ' + msg ); }), time);
-            time += 5000;
+                function(msg){ console.error( 'Error: ' + msg ); });
         });
     },
 
