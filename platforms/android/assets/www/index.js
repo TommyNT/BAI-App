@@ -82,12 +82,12 @@ var app = {
 
     repeatRec: function() {
         var local = (JSON.parse(localStorage.getItem("clicked")));
-        jQuery.each(local, setTimeout(function() {
-            console.log('' + this);
+        jQuery.each(local, function() {
+            // console.log('' + this);
             window.plugins.NativeAudio.play('' + this, 
-                function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
-                function(msg){ console.error( 'Error: ' + msg ); });
-        }, 3000));
+                setTimeout(function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
+                function(msg){ console.error( 'Error: ' + msg ); }), 3000);
+        });
     },
 
     sendRec: function() {
