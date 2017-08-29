@@ -81,15 +81,11 @@ var app = {
 
     repeatRec: function() {
         var local = (JSON.parse(localStorage.getItem("clicked")));
-        var offset = 0;
         jQuery.each(local, function() {
-            setTimeout(function(){
-                window.plugins.NativeAudio.play('' + this, 
-                    function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
-                    function(msg){ console.error( 'Error: ' + msg ); });
-                    console.log('' + this);
-            }, 3000 + offset);
-            offset += 3000;
+            // console.log('' + this);
+            window.plugins.NativeAudio.play('' + this, 
+                function(msg){console.info(msg), setTimeout(function(){document.getElementById('' + this).classList.remove('touched');}, 100);},
+                function(msg){ console.error( 'Error: ' + msg ); });
         });
     },
 
